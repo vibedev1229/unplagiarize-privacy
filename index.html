@@ -243,6 +243,7 @@
     <tr><td>Purchase and subscription state</td><td>So your purchase keeps working across sessions</td><td>While the entitlement is live</td></tr>
     <tr><td>Aggregate service counts (how many checks ran, how many tokens)</td><td>To keep the service running and within budget</td><td>Aggregate numbers only &mdash; no document text</td></tr>
     <tr><td>Problem reports you submitted</td><td>To investigate a bad result you told us about</td><td>Until you ask us to delete it (section 7)</td></tr>
+    <tr><td>A note that a particular purchase or rewarded ad has already been credited</td><td>So the same receipt or the same ad cannot be counted twice. It records that the credit happened &mdash; not what you did with it</td><td>Purchases: while the entitlement is live. Ads: 30 days</td></tr>
   </tbody>
 </table>
 <p>
@@ -268,13 +269,15 @@
   </li>
 </ul>
 <p>
-  One deliberate exception: the counter for the <em>current</em> day is kept, because deleting it would
-  turn &ldquo;delete my data&rdquo; into an unlimited free-usage button. It expires on its own at
-  midnight UTC.
+  <strong>Two things deliberately survive deletion, and we would rather say so than let you find out.</strong>
+  The counter for the <em>current</em> day is kept, because clearing it would turn &ldquo;delete my
+  data&rdquo; into an unlimited free-usage button; it expires on its own at midnight UTC. So is the note
+  that a given purchase or rewarded ad has already been credited &mdash; without it the same receipt
+  could be redeemed again. Neither contains anything you wrote, and the ad record is deleted after 30 days.
 </p>
 <p>
-  You can also ask for a copy of what is held against your installation. Because there is no account, we
-  need the install identifier shown in the app to find it.
+  You can also ask for a copy of what is held. If you have linked an account we use that; if you have not,
+  we need the install identifier shown in the app to find it.
 </p>
 
 <h2>8. Advertising</h2>
